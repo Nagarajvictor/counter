@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Count</title>
+        <style>
+            .container{
+                text-align: center;
+            }
+            button{
+                width:30px;
+                color: white;
+                background-color: black;
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+            <h1 style="text-align: center;">Counter</h1>
+            <div class="container">
+                <div>
+                    <button onclick="increment()">+</button>
+                </div>
+                <div>
+                    <h2 id="count"></h2>
+                </div>
+                <div>
+                    <button onclick="decrement()">-</button>
+                </div>
+            </div>
+        
+            
+        
+                <script>
+                    var value = 0;
+                    document.getElementById("count").innerText = value;
+                    function increment() {
+                        value += 1;
+                        document.getElementById("count").innerText = value;
+                    }
+                    function decrement() {
+                        value -= 1;
+                        document.getElementById("count").innerText = value;
+                    }
+                </script>
+        
+        
+        
+        
+    </body>
+</html>
